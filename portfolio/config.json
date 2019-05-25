@@ -25,9 +25,9 @@
     },
     {
       "text": "Journal",
-      "link": "/journal/",
+      "link": "https://github.com/stephenherrick",
       "position": "right",
-      "external": false
+      "external": true
     }
   ]
 }
