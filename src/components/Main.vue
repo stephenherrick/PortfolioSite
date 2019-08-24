@@ -17,7 +17,7 @@
                 </b-row>
                 <b-row class="p-5">
                     <b-col>
-                        <b-button block variant="outline-info" target="_blank" href="https://linkedin.com/in/stephenpaulherick">LinkedIn</b-button>
+                        <b-button block variant="outline-info" target="_blank" href="https://linkedin.com/in/stephenpaulherrick">LinkedIn</b-button>
                     </b-col>
                 </b-row>
                 <b-row class="p-5">
