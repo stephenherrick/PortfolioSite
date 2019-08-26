@@ -11,6 +11,11 @@ export default {
   name: 'app',
   components: {
     Main
+  },
+  methods: {
+    track () {
+      this.$ga.page('/')
+    }
   }
 }
 </script>
