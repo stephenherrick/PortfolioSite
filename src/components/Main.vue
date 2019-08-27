@@ -62,10 +62,12 @@
         },
         methods:{
             captureOutboundLink:function(url) {
-                this.$ga.event('send', 'event', 'outbound', 'click', url, {
-                    'transport': 'beacon',
-                    'hitCallback': function(){document.location = url;}
-                });
+                this.$ga.event({
+                    eventCategory: 'Click',
+                    eventAction: 'Link Click',
+                    eventLabel: 'Click',
+                    eventValue: url
+                })
             }
         },
         computed:{
