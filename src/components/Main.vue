@@ -30,7 +30,7 @@
                 </b-row>
                 <b-row class="p-2">
                     <b-col>
-                        <b-link href="https://linkedin.com/in/stephenpaulherick" target="_blank">
+                        <b-link href="https://linkedin.com/in/stephenpaulherrick" target="_blank">
                             <b-img style="height: 75px;" src="../assets/linkedin_logo.png" alt="LinkedIn Logo" />
                         </b-link>
                         <b-link href="https://github.com/stephenherrick/" target="_blank">
