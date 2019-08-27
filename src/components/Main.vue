@@ -51,7 +51,15 @@
 </template>
 
 <script>
+
     export default {
+
+        mounted:function(){
+            this.$ga.event({
+                eventCategory: 'Hit',
+                eventAction: 'PageLoaded'
+            })
+        },
         methods:{
             captureOutboundLink:function(url) {
                 ga('send', 'event', 'outbound', 'click', url, {
