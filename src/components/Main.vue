@@ -17,8 +17,8 @@
                 <b-row align-v="center" class="p-2">
                     <b-col>
                         <b-button block variant="outline-info" target="_blank"
-                            href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?ths=true"
-                            onclick="captureOutboundLink('https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?ths=true'); return false;">Resume
+                            href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing"
+                            onclick="captureOutboundLink('https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing'); return false;">Resume
                         </b-button>
                     </b-col>
                 </b-row>
