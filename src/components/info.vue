@@ -2,44 +2,25 @@
     <div>
         <b-row>
             <b-col>
+                <b-img alt="logo" src="../assets/logo.png" />
             </b-col>
-            <b-col md="7" sm="auto">
-                <b-row>
-                    <b-col>
-                        <b-img alt="logo" src="../assets/logo.png" />
-                    </b-col>
-                </b-row>
-                <b-row align-v="center" class="p-2">
-                    <b-col>
-                        <b-button block variant="outline-info" target="_blank">
-                            <router-link to="Resume">Resume</router-link>
-                        </b-button>
-                    </b-col>
-                </b-row>
-                <b-row class="p-2">
-                    <b-col>
-                        <b-button block variant="outline-info" target="_blank" href="mailto:stephen.herrick@gmail.com"
-                            @click="captureOutboundLink('mailto:stephen.herrick@gmail.com');">
-                            Contact Me
-                        </b-button>
-                    </b-col>
-                </b-row>
-                <b-row class="p-2">
-                    <b-col>
-                        <b-link href="https://linkedin.com/in/stephenpaulherrick" target="_blank"
-                            @click="captureOutboundLink('https://linkedin.com/in/stephenpaulherrick');">
-                            <b-img style="height: 75px; padding-right: 25px;" src="../assets/linkedin_logo.png"
-                                alt="LinkedIn Logo" />
-                        </b-link>
-                        <b-link href="https://github.com/stephenherrick/" target="_blank"
-                            @click="captureOutboundLink('https://github.com/stephenherrick/');">
-                            <b-img style="height: 75px; padding-left: 25px;" src="../assets/GitHub_Logo.png"
-                                alt="GitHub Logo" />
-                        </b-link>
-                    </b-col>
-                </b-row>
-            </b-col>
+        </b-row>
+        <b-row align-v="center">
             <b-col>
+                <router-link to="Resume">
+                    <i class="far fa-file fa-7x"></i>
+                </router-link>
+                <b-link target="_blank" href="mailto:stephen.herrick@gmail.com">
+                    <i class="far fa-envelope fa-7x"></i>
+                </b-link>
+                <b-link href="https://linkedin.com/in/stephenpaulherrick" target="_blank"
+                    @click="captureOutboundLink('https://linkedin.com/in/stephenpaulherrick');">
+                    <i class="fab fa-linkedin fa-7x"></i>
+                </b-link>
+                <b-link href="https://github.com/stephenherrick/" target="_blank"
+                    @click="captureOutboundLink('https://github.com/stephenherrick/');">
+                    <i class="fab fa-github fa-7x"></i>
+                </b-link>
             </b-col>
         </b-row>
     </div>
@@ -72,5 +53,13 @@
         }
     }
 </script>
-<style>
+<style scoped>
+    i {
+        color: darkgrey;
+        padding: 5%;
+    }
+    i:hover {
+        color:dodgerblue;
+    }
 </style>
+

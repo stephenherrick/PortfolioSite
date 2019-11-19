@@ -6,7 +6,11 @@
             header-text-variant="white">
         </b-card-header>
         <b-row>
-        <router-view></router-view>
+            <b-col></b-col>
+            <b-col md="7" sm="auto">
+              <router-view></router-view>
+            </b-col>
+            <b-col></b-col>
         </b-row>
         <b-card-footer :footer=getFooterText class="text-center">
     </b-card-footer>

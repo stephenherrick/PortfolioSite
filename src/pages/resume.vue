@@ -1,6 +1,8 @@
 <template>
 <div @load="displayMardown()">
-  <div id="content"></div>
+  <b-row align-content="left">
+    <b-col id="content"></b-col>
+  </b-row>
 </div>
 </template>
 
@@ -16,6 +18,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    #content {
+      text-align: left;
+    }
 </style>
