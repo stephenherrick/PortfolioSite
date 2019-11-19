@@ -11,10 +11,8 @@
                 </b-row>
                 <b-row align-v="center" class="p-2">
                     <b-col>
-                        <b-button block variant="outline-info" target="_blank"
-                            href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing"
-                            @click="captureOutboundLink('https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing');">
-                            Resume
+                        <b-button block variant="outline-info" target="_blank">
+                            <router-link to="Resume">Resume</router-link>
                         </b-button>
                     </b-col>
                 </b-row>
