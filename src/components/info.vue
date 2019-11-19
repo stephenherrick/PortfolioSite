@@ -1,10 +1,5 @@
 <template>
     <div>
-        <b-card-header 
-            header="Stephen Herrick, SDET" 
-            header-bg-variant="dark" 
-            header-text-variant="white">
-        </b-card-header>
         <b-row>
             <b-col>
             </b-col>
@@ -18,14 +13,14 @@
                     <b-col>
                         <b-button block variant="outline-info" target="_blank"
                             href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing"
-                            @click="captureOutboundLink('https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing');">Resume
+                            @click="captureOutboundLink('https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing');">
+                            Resume
                         </b-button>
                     </b-col>
                 </b-row>
-                 <b-row class="p-2">
+                <b-row class="p-2">
                     <b-col>
-                        <b-button block variant="outline-info" target="_blank" 
-                            href="mailto:stephen.herrick@gmail.com"
+                        <b-button block variant="outline-info" target="_blank" href="mailto:stephen.herrick@gmail.com"
                             @click="captureOutboundLink('mailto:stephen.herrick@gmail.com');">
                             Contact Me
                         </b-button>
@@ -33,11 +28,15 @@
                 </b-row>
                 <b-row class="p-2">
                     <b-col>
-                        <b-link href="https://linkedin.com/in/stephenpaulherrick" target="_blank" @click="captureOutboundLink('https://linkedin.com/in/stephenpaulherrick');">
-                            <b-img style="height: 75px; padding-right: 25px;" src="../assets/linkedin_logo.png" alt="LinkedIn Logo" />
+                        <b-link href="https://linkedin.com/in/stephenpaulherrick" target="_blank"
+                            @click="captureOutboundLink('https://linkedin.com/in/stephenpaulherrick');">
+                            <b-img style="height: 75px; padding-right: 25px;" src="../assets/linkedin_logo.png"
+                                alt="LinkedIn Logo" />
                         </b-link>
-                        <b-link href="https://github.com/stephenherrick/" target="_blank" @click="captureOutboundLink('https://github.com/stephenherrick/');">
-                            <b-img style="height: 75px; padding-left: 25px;" src="../assets/GitHub_Logo.png" alt="GitHub Logo" />
+                        <b-link href="https://github.com/stephenherrick/" target="_blank"
+                            @click="captureOutboundLink('https://github.com/stephenherrick/');">
+                            <b-img style="height: 75px; padding-left: 25px;" src="../assets/GitHub_Logo.png"
+                                alt="GitHub Logo" />
                         </b-link>
                     </b-col>
                 </b-row>
@@ -45,23 +44,19 @@
             <b-col>
             </b-col>
         </b-row>
-        <b-card-footer :footer=getFooterText>
-        </b-card-footer>
     </div>
 </template>
 
 <script>
-
     export default {
-
-        mounted:function(){
+        mounted: function () {
             this.$ga.event({
                 eventCategory: 'Hit',
                 eventAction: 'PageLoaded'
             })
         },
-        methods:{
-            captureOutboundLink:function(url) {
+        methods: {
+            captureOutboundLink: function (url) {
                 this.$ga.event({
                     eventCategory: 'Click',
                     eventAction: 'LinkClick',
@@ -70,16 +65,14 @@
                 })
             }
         },
-        computed:{
-            getFooterText:function(){
+        computed: {
+            getFooterText: function () {
                 var year = new Date().getFullYear().toString();
-                var footerText = "Copyright  ©"+year+" stephenherrick.dev";
+                var footerText = "Copyright  ©" + year + " stephenherrick.dev";
                 return footerText
+            }
         }
-    }        
-}
+    }
 </script>
-
 <style>
-
 </style>

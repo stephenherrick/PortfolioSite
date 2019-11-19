@@ -1,21 +1,3 @@
-<!----- Conversion time: 0.935 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β17
-* Fri Oct 25 2019 10:02:02 GMT-0700 (PDT)
-* Source doc: https://docs.google.com/open?id=1JAW-t2O7xfJcXXfIddAG08KwyGp7V9MjkJw2PSDzP9Q
------>
-
-
 **Stephen Paul Herrick**
 
 Cell: (360) 628-3752

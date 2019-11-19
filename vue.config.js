@@ -1,3 +1,6 @@
+const marked = require("marked")
+const renderer = new marked.Renderer()
+
 module.exports = {
     chainWebpack: config => {
       config.module
@@ -18,6 +21,16 @@ module.exports = {
           }
   
           return options
+        }),
+      config.module
+        .rule('md')
+        .test(/\.md$/)
+        .use('markdown-loader')
+        .loader('markdown-loader')
+        .loader('html-loader')
+        .options({
+          pedantic: true,
+          renderer
         })
     }
   }
