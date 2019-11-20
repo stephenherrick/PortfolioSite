@@ -1,17 +1,33 @@
 <template>
   <div id="app" class="bg=dark">
-    <Main/>
+     <b-card-header 
+            header="Stephen Herrick" 
+            header-bg-variant="dark" 
+            header-text-variant="white">
+        </b-card-header>
+        <b-row>
+            <b-col></b-col>
+            <b-col md="7" sm="auto">
+              <router-view></router-view>
+            </b-col>
+            <b-col></b-col>
+        </b-row>
+        <b-card-footer :footer=getFooterText class="text-center">
+    </b-card-footer>
   </div>
 </template>
 
 <script>
-import Main from './components/Main.vue'
 
 export default {
-  name: 'app',
-  components: {
-    Main
-  },
+  name: "app",
+  computed: {
+      getFooterText: function () {
+        var year = new Date().getFullYear().toString();
+        var footerText = "Copyright  ©" + year + " stephenherrick.dev";
+        return footerText
+      }
+    },
   methods: {
     track () {
       this.$ga.page('/')
