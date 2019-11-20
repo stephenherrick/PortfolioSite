@@ -3,6 +3,9 @@
   <b-row align-content="left">
     <b-col id="content"></b-col>
   </b-row>
+  <b-button @click="printMe()">
+    <i class="fas fa-print fa-4x"></i>
+  </b-button>
 </div>
 </template>
 
@@ -11,6 +14,11 @@ import doc from "../assets/resume.md"
 import marked from "marked"
 
 export default {
+  methods:{
+    printMe(){
+      window.print()
+    }
+  },
     mounted() {
       document.getElementById('content').innerHTML =
       marked(doc);
@@ -21,5 +29,12 @@ export default {
 <style scoped>
     #content {
       text-align: left;
+    }
+    i {
+      color: darkgrey;
+      padding: 5%;
+    }
+    i:hover {
+      color: dodgerblue;
     }
 </style>
