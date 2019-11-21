@@ -31,7 +31,7 @@ export default {
       text-align: left;
     }
     i {
-      padding-bottom: 10%
+      padding-bottom: 50px;
     }
     i:hover {
       color: dodgerblue;
