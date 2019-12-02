@@ -30,7 +30,7 @@ Accomplished Software QA Engineer with experience in web based technologies as w
 
 **_Professional Experience_**
 
-10/19 – _Current_  / **Burkhart Dental Supply** / Lakewood, WA
+10/19 – _Current_   **Burkhart Dental Supply**  Lakewood, WA
 
 _SDET / Software Developer Engineer in Test_
 
@@ -43,7 +43,7 @@ _SDET / Software Developer Engineer in Test_
 *   Create quality process and documentation
 
 
-01/16 – 9/18	**UW Medicine** / Seattle, WA
+01/16 – 9/18	**UW Medicine**  Seattle, WA
 
 _Validation Analyst / Test Automation Engineer_
 
@@ -57,7 +57,7 @@ _Validation Analyst / Test Automation Engineer_
 *   Created Stress and Load tests using JMeter and Visual Studio Performance Test tools
 *   Updated QA Processes from Waterfall to Agile/SCRUM methodology
 
-10/11 – 12/2015 	**Western Institutional Review Board (WIRB)** / Puyallup, WA
+10/11 – 12/2015 	**Western Institutional Review Board (WIRB)**  Puyallup, WA
 
 _Validation Test Specialist / QA Lead_
 
@@ -68,7 +68,7 @@ _Validation Test Specialist / QA Lead_
 *   QA lead for interface updates with sister companies.
 *   Coordinated test effort across a large team of contractors and workers across the US and India.
 
-03/03 – 02/07	**Kelly Services** / DuPont, WA
+03/03 – 02/07	**Kelly Services**  DuPont, WA
 
 _Hardware Tester (Contract with Intel Corporation)_
 
@@ -80,7 +80,7 @@ _Hardware Tester (Contract with Intel Corporation)_
 
 **_Other Professional Experience_**
 
-04/11 – 10/11	**University of Medicine and Dentistry of New Jersey** / Newark, NJ
+04/11 – 10/11	**University of Medicine and Dentistry of New Jersey**  Newark, NJ
 
 _Staff Assistant_
 
@@ -91,7 +91,7 @@ _Staff Assistant_
 *   Monitor changes in FDA/OHRP regulation and guidance and recommend appropriate revision in policy and procedures  
 *   Provide guidance on technical and ethical requirements for conducting research involving human subjects
 
-03/07 – 03/11	**Western Institutional Review Board (WIRB)** / Olympia, WA
+03/07 – 03/11	**Western Institutional Review Board (WIRB)**  Olympia, WA
 
 _Board Support Supervisor_
 
@@ -110,7 +110,7 @@ _Board Support Supervisor_
 
 **_Education_**
 
-08/03 – 12/05	**Brigham Young University – Idaho** / Rexburg, ID
+08/03 – 12/05	**Brigham Young University – Idaho**  Rexburg, ID
 
 
 
