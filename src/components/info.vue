@@ -5,7 +5,7 @@
                 <b-img id="logo" alt="logo" src="../assets/logo.png" />
             </b-col>
         </b-row>
-        <b-row align-v="center">
+        <b-row align-v="center" align-h="center" class='icons'>
             <b-col>
                 <router-link to="Resume">
                     <i class="far fa-file fa-7x">
@@ -67,9 +67,9 @@
 <style scoped>
     i {
         color: darkgrey;
-        /* position: absolute; */
-        transition: color 1s
-
+        transition: color 1s;
+        padding-left: 30%;
+        padding-right: 30%;
     }
     i:hover {
         color:dodgerblue;
@@ -84,6 +84,9 @@
         text-align: center;
     }
     #logo {
+        padding: 5%;
+    }
+    .icons {
         padding: 5%;
     }
 </style>
