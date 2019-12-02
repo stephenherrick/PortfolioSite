@@ -36,8 +36,12 @@ _SDET / Software Developer Engineer in Test_
 
 
 
-*   Test microservice architecture
-*   
+*   Created integration and unit tests for a micro service architecture layer connecting more than 20 applications
+*   Created component level unit tests for Vue.js projects
+*   Tested and implemented a custom third-party Warehouse Management System with internal integrations
+*   Trained developers in writing more effective unit tests
+*   Create quality process and documentation
+
 
 01/16 – 9/18	**UW Medicine** / Seattle, WA
 
