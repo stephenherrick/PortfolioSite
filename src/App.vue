@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="bg=dark">
-    <b-card-header header="Stephen Herrick" header-bg-variant="dark" header-text-variant="white">
+    <b-card-header header="Stephen Herrick" header-bg-variant="dark" header-text-variant="white" style="width:100%;">
     </b-card-header>
     <b-row align-h="center">
       <b-col></b-col>
@@ -20,7 +20,7 @@
     computed: {
       getFooterText: function () {
         var year = new Date().getFullYear().toString();
-        var footerText = "stephenherrick.dev ©" + year;
+        var footerText = "©" + year + " stephenherrick.dev";
         return footerText
       }
     },
