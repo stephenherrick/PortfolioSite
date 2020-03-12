@@ -11,17 +11,17 @@ Email: [stephen.herrick@gmail.com](mailto:stephen.herrick@gmail.com)
 
 **_Summary_**
 
-Accomplished Software QA Engineer with experience in web based technologies as well as internal closed systems.  Strong analytical skills and familiarity with risk based approaches to drive test coverage.  Experience in working with teams local and across the globe.  Successful in seeing large and small-scale projects from planning through to release and maintenance.
+Accomplished SDET/QA Engineer with experience in development of test automation at the unit, integration, and end to end levels of web applications.  Strong analytical skills and familiarity with risk based approaches to drive test coverage.  Experience in working with teams local and across the globe.  Successful in seeing large and small-scale projects from planning through to release and maintenance.
 
 **_Technical Summary_**
 
 
 
-*   **Languages**:  C#, T-SQL, JavaScript, HTML, XML, JSON
+*   **Languages**:  C#, JavaScript, SQL
 *   **Methodologies**:  Waterfall, Agile/SCRUM
 *   **Testing Methods**:  Black Box, White Box, Performance/Load/Stress, Regression
-*   **Software**: Atlassian (Jira/Confluence), Visual Studio, Team Foundation Server (TFS), Git, TestTrack Professional, HP ALM, Microsoft Test Manager, SQL Server Management Studio, JMeter, Postman, SoapUI
-*   **Technologies**:  Selenium WebDriver, NUnit, Cucumber/SpecFlow, RESTful Web Services, SharePoint, SQL Server, Node.js
+*   **Tools**: Atlassian (Jira/Confluence), Visual Studio, Azure DevOps, Git, TestTrack Professional, HP ALM, Microsoft Test Manager, SQL Server Management Studio, JMeter, Postman/Newman
+*   **Software/Environments**:  Windows Server, SharePoint, SQL Server, Selenium WebDriver, Cucumber, REST APIs, Node.js
 
 
 
@@ -32,20 +32,21 @@ Accomplished Software QA Engineer with experience in web based technologies as w
 
 10/19 – _Current_   **Burkhart Dental Supply**  Lakewood, WA
 
-_SDET / Software Developer Engineer in Test_
+_Software Developer Engineer in Test_
 
 
 
-*   Created integration and unit tests for a micro service architecture layer connecting more than 20 applications
-*   Created component level unit tests for Vue.js projects
+*   Developed integration and unit tests for a microservice architecture layer connecting more than 20 applications
+*   Developed component level unit tests for Vue.js projects
+*   Developed Selenium WebDriver extension methods and handlers   
 *   Tested and implemented a custom third-party Warehouse Management System with internal integrations
 *   Trained developers in writing more effective unit tests
-*   Create quality process and documentation
+*   Created quality process and related documentation
 
 
 01/16 – 9/18	**UW Medicine**  Seattle, WA
 
-_Validation Analyst / Test Automation Engineer_
+_Test Automation Engineer_
 
 
 
@@ -111,14 +112,10 @@ _Board Support Supervisor_
 **_Education_**
 
 08/03 – 12/05	**Brigham Young University – Idaho**  Rexburg, ID
-
-
-
 *   2 years of study in Computer Science
 
-09/96 – 06/00	**Olympia High School** / Olympia, WA
-
-
+09/96 – 06/00	**Olympia High School**  Olympia, WA
+*   GED
 
 ---
 
