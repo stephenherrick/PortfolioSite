@@ -30,7 +30,7 @@ Accomplished SDET/QA Engineer with experience in development of test automation 
 
 **_Professional Experience_**
 
-10/19 – _Current_   **Burkhart Dental Supply**  Lakewood, WA
+10/19 – _Current_   **Burkhart Dental Supply**  Tacoma, WA
 
 _Software Developer Engineer in Test_
 
