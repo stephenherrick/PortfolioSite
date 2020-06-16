@@ -11,19 +11,14 @@ Email: [stephen.herrick@gmail.com](mailto:stephen.herrick@gmail.com)
 
 **_Summary_**
 
-Accomplished Software QA Engineer with experience in web based technologies as well as internal closed systems.  Strong analytical skills and familiarity with risk based approaches to drive test coverage.  Experience in working with teams local and across the globe.  Successful in seeing large and small-scale projects from planning through to release and maintenance.
+Accomplished SDET with experience in web based technologies as well as internal closed systems. Strong analytical skills and familiarity with risk based approaches to drive test coverage. Experience in working with teams local and across the globe. Successful in seeing large and small-scale projects from planning through to release and maintenance.
 
 **_Technical Summary_**
 
-
-
-*   **Languages**:  C#, T-SQL, JavaScript, HTML, XML, JSON
-*   **Methodologies**:  Waterfall, Agile/SCRUM
+*   **Languages**:  C#, T-SQL, JavaScript, HTML/CSS
+*   **Methodologies**:  Waterfall, Agile (Scrum and Kanban)
 *   **Testing Methods**:  Black Box, White Box, Performance/Load/Stress, Regression
-*   **Software**: Atlassian (Jira/Confluence), Visual Studio, Team Foundation Server (TFS), Git, TestTrack Professional, HP ALM, Microsoft Test Manager, SQL Server Management Studio, JMeter, Postman, SoapUI
-*   **Technologies**:  Selenium WebDriver, NUnit, Cucumber/SpecFlow, RESTful Web Services, SharePoint, SQL Server, Node.js
-
-
+*   **Technologies and Frameworks**:  .Net Core/Framework, Node.js, Vue.js, Selenium WebDriver, Cucumber/SpecFlow, git bash, RESTful APIs, Postman/Newman, SharePoint, SQL Server
 
 ---
 
@@ -38,9 +33,11 @@ _SDET / Software Developer Engineer in Test_
 
 *   Created integration and unit tests for a micro service architecture layer connecting more than 20 applications
 *   Created component level unit tests for Vue.js projects
+*   Maintain CI/CD pipelines in Azure DevOps
 *   Tested and implemented a custom third-party Warehouse Management System with internal integrations
 *   Trained developers in writing more effective unit tests
 *   Create quality process and documentation
+
 
 
 01/16 – 9/18	**UW Medicine**  Seattle, WA
