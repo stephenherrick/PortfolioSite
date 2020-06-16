@@ -3,8 +3,8 @@
   <b-row align-content="left">
     <b-col id="content"></b-col>
   </b-row>
-  <b-button @click="printMe()">
-    <i class="fas fa-print fa-4x"></i>
+  <b-button href='https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing' target='_blank'>
+    <i class="fas fa-download fa-4x"></i>
   </b-button>
 </div>
 </template>

@@ -25,7 +25,7 @@ Accomplished SDET with experience in web based technologies as well as internal 
 
 **_Professional Experience_**
 
-10/19 – _Current_   **Burkhart Dental Supply**  Lakewood, WA
+10/19 – _Current_   **Burkhart Dental Supply**  Tacoma, WA
 
 _SDET / Software Developer Engineer in Test_
 
