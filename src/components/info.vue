@@ -7,7 +7,8 @@
         </b-row>
         <b-row align-v="center" align-h="center" class='icons'>
             <b-col sm="12" md="6" lg="3">
-                <b-link target="_blank" href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing">
+                <b-link target="_blank" href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing"
+                    @click="captureOutboundLink('https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing');">
                     <i class="far fa-file fa-7x">
                         <br/>
                         <div id="label">Resume</div>
