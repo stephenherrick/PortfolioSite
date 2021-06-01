@@ -6,15 +6,15 @@
             </b-col>
         </b-row>
         <b-row align-v="center" align-h="center" class='icons'>
-            <b-col>
-                <router-link to="Resume">
+            <b-col sm="12" md="6" lg="3">
+                <b-link target="_blank" href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing">
                     <i class="far fa-file fa-7x">
                         <br/>
                         <div id="label">Resume</div>
                     </i>
-                </router-link>
+                </b-link>
             </b-col>
-            <b-col>
+            <b-col sm="12" md="6" lg="3">
                 <b-link target="_blank" href="mailto:stephen.herrick@gmail.com">
                     <i class="far fa-envelope fa-7x">
                         <br/>
@@ -22,7 +22,7 @@
                     </i>
                 </b-link>
             </b-col>
-            <b-col>
+            <b-col sm="12" md="6" lg="3">
                 <b-link href="https://linkedin.com/in/stephenpaulherrick" target="_blank"
                     @click="captureOutboundLink('https://linkedin.com/in/stephenpaulherrick');">
                     <i class="fab fa-linkedin fa-7x">
@@ -31,7 +31,7 @@
                     </i>
                 </b-link>
             </b-col>
-            <b-col>
+            <b-col sm="12" md="6" lg="3">
                 <b-link href="https://github.com/stephenherrick/" target="_blank"
                     @click="captureOutboundLink('https://github.com/stephenherrick/');">
                     <i class="fab fa-github fa-7x">
