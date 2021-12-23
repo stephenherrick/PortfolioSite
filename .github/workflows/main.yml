@@ -4,15 +4,31 @@ on:
     branches:    
       - 'master'
 jobs:
-  deploy:
-      name: 'Deploy to Netlify'
-      runs-on: ubuntu-latest
-      steps:
-        - uses: jsmrcaga/action-netlify-deploy@v1.7.0
-          with:
-            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-            NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-            NETLIFY_DEPLOY_TO_PROD: true
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Build
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2.3
+        with:
+          publish-dir: './dist'
+          production-branch: master
+          github-token: ${{ secrets.GHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
   test:
     name: 'Test'
     timeout-minutes: 60
