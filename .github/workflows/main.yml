@@ -16,6 +16,7 @@ jobs:
       - run: npm run build
 
       - name: Deploy to Netlify
+        id: deploy
         uses: nwtgck/actions-netlify@v1.2.3
         with:
           publish-dir: './dist'
@@ -41,4 +42,4 @@ jobs:
       run: npm run test
       env:
         # This might depend on your test-runner/language binding
-        PLAYWRIGHT_TEST_BASE_URL: ${{ deploy-url }}
+        PLAYWRIGHT_TEST_BASE_URL: ${{ steps.deploy.outputs.deploy-url }}
