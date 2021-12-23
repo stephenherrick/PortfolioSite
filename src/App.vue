@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="bg=dark">
-    <b-card-header header="Stephen Herrick, SDET and QA Professional" header-bg-variant="dark" header-text-variant="white">
+    <b-card-header header="Stephen Herrick, SDET & QA Professional" header-bg-variant="dark" header-text-variant="white">
     </b-card-header>
     <b-row align-h="center">
       <b-col></b-col>
