@@ -9,11 +9,9 @@ jobs:
     steps:
       - name: Build
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2.5.0
         with:
-          node-version: '15'
-          cache: 'npm'
-      - run: npm install
+          node-version: 15.x
       - run: npm run build
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2.3
