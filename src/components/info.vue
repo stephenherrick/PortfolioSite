@@ -6,38 +6,17 @@
             </b-col>
         </b-row>
         <b-row align-v="center" align-h="center" class='icons'>
-            <b-col sm="12" md="6" lg="3">
-                <b-link target="_blank" href="https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing"
-                    @click="captureOutboundLink('https://drive.google.com/file/d/0BzmBR3K6IccHaUFBazJocG1lSXc/view?usp=sharing');">
-                    <i class="far fa-file fa-7x">
+            <b-col
+                sm="12" 
+                md="6" \
+                lg="3"
+                v-for="link in links"
+                v-bind:key="link.siteName"
+            >
+                <b-link target="_blank" href={{ link.url }}>
+                    <i class={{ link.icon }}>
                         <br/>
-                        <div id="label">Resume</div>
-                    </i>
-                </b-link>
-            </b-col>
-            <b-col sm="12" md="6" lg="3">
-                <b-link target="_blank" href="mailto:stephen.herrick@gmail.com">
-                    <i class="far fa-envelope fa-7x">
-                        <br/>
-                        <div id="label">EMail</div>
-                    </i>
-                </b-link>
-            </b-col>
-            <b-col sm="12" md="6" lg="3">
-                <b-link href="https://linkedin.com/in/stephenpaulherrick" target="_blank"
-                    @click="captureOutboundLink('https://linkedin.com/in/stephenpaulherrick');">
-                    <i class="fab fa-linkedin fa-7x">
-                        <br/>
-                        <div id="label">LinkedIn</div>
-                    </i>
-                </b-link>
-            </b-col>
-            <b-col sm="12" md="6" lg="3">
-                <b-link href="https://github.com/stephenherrick/" target="_blank"
-                    @click="captureOutboundLink('https://github.com/stephenherrick/');">
-                    <i class="fab fa-github fa-7x">
-                        <br/>
-                        <div id="label">GitHub</div>
+                        <div id="label"> {{link.siteName}} </div>
                     </i>
                 </b-link>
             </b-col>
@@ -47,6 +26,15 @@
 
 <script>
     export default {
+        data(){
+            return {
+                links: []
+            }
+        },
+        async created() {
+            this.links = await this.getLinks();
+
+        },
         mounted: function () {
             this.$ga.event({
                 eventCategory: 'Hit',
@@ -54,16 +42,38 @@
             })
         },
         methods: {
-            captureOutboundLink: function (url) {
-                this.$ga.event({
-                    eventCategory: 'Click',
-                    eventAction: 'LinkClick',
-                    eventLabel: 'Click',
-                    eventValue: url
-                })
+            getLinkss: async () => {
+                const query = `{
+                    query {
+                        linkCollection {
+                            items {
+                                siteName
+                                url
+                                icon
+                            }
+                        }
+                    }
+            }`;
+            const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.VUE_APP_CONTENTFUL_SPACE_ID}`;
+            const fetchOptions = {
+                method: "POST",
+                headers: {
+                    Authorization: `Bearer ${process.env.VUE_APP_CONTENTFUL_ACCESS_TOKEN}`,
+                    "Content-Type": "application/json"},
+                body: JSON.stringify({query})
+                };
+            try {
+                const response = await fetch(fetchUrl, fetchOptions).then(response =>
+                response.json()
+            );
+            return response.data.linkCollection.items;
+            } 
+            catch (error) {
+                throw new Error("Could not receive the data from Contentful!");
             }
-        }
+        }       
     }
+}
 </script>
 <style scoped>
     i {
