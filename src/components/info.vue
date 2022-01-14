@@ -8,15 +8,15 @@
         <b-row align-v="center" align-h="center" class='icons'>
             <b-col
                 sm="12" 
-                md="6" \
+                md="6"
                 lg="3"
                 v-for="link in links"
                 v-bind:key="link.siteName"
             >
-                <b-link target="_blank" href={{ link.url }}>
-                    <i class={{ link.icon }}>
+                <b-link target="_blank" v-bind:href="link.url">
+                    <i v-bind:class="link.icon">
                         <br/>
-                        <div id="label"> {{link.siteName}} </div>
+                        <div id="label">{{ link.siteName }}</div>
                     </i>
                 </b-link>
             </b-col>
@@ -33,7 +33,6 @@
         },
         async created() {
             this.links = await this.getLinks();
-
         },
         mounted: function () {
             this.$ga.event({
@@ -42,9 +41,8 @@
             })
         },
         methods: {
-            getLinkss: async () => {
+            getLinks: async () => {
                 const query = `{
-                    query {
                         linkCollection {
                             items {
                                 siteName
@@ -52,8 +50,7 @@
                                 icon
                             }
                         }
-                    }
-            }`;
+                    }`;
             const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.VUE_APP_CONTENTFUL_SPACE_ID}`;
             const fetchOptions = {
                 method: "POST",
