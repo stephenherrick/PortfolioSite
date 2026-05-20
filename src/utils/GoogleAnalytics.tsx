@@ -5,6 +5,23 @@ interface GoogleAnalyticsProps {
   children: React.ReactNode
 }
 
+// Extend Window interface for Google Analytics
+declare global {
+  interface Window {
+    dataLayer: any[]
+    gtag: (...args: any[]) => void
+  }
+}
+
+// Extend ImportMeta for Vite environment variables
+declare global {
+  interface ImportMeta {
+    env: {
+      VITE_GA_MEASUREMENT_ID: string
+    }
+  }
+}
+
 const MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-XXXXXXX'
 
 export default function GoogleAnalytics({ children }: GoogleAnalyticsProps) {
@@ -18,7 +35,7 @@ export default function GoogleAnalytics({ children }: GoogleAnalyticsProps) {
     document.head.appendChild(script)
 
     window.dataLayer = window.dataLayer || []
-    function gtag(...args: any[]) {
+    function gtag(..._args: any[]) {
       window.dataLayer.push(arguments)
     }
     gtag('js', new Date())
