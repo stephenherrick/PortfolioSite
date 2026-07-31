@@ -23,7 +23,7 @@ test('terminal interface runs fake tests from the browser', async ({ page }) => 
 
   const terminal = page.locator('[data-testid="fake-terminal"]')
   await expect(terminal).toBeVisible()
-  await expect(terminal).toContainText('npm run test')
+  await expect(page.getByPlaceholder('Enter command')).toHaveValue('npm run test')
 
   await page.getByPlaceholder('Enter command').fill('npm run test')
   await page.getByRole('button', { name: /run/i }).click()
